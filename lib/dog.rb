@@ -28,8 +28,8 @@ class Dog
     DB[:conn].execute(sql)
   end 
   
-  def save 
-    
-  end
+  def self.new_from_db(row)
+    dog = Dog.new(name:row[1], breed:[2])
+  end 
   
 end 
