@@ -65,7 +65,8 @@ class Dog
     
     dog = new_from_db(DB[:conn].execute(sql, name, breed)[0])
     
-    if dog.empty?
+    if !dog.empty?
+      dog_data = dog[0]
       
     
   end
