@@ -48,4 +48,8 @@ class Dog
     
   end
   
+  def create(name:, breed:)
+    dog = Dog.new(name:"Dave", breed:"Poodle")
+  end 
+  
 end 
